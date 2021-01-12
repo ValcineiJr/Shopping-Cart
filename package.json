@@ -1,5 +1,6 @@
 {
   "name": "react-cart",
+  "homepage": "/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
