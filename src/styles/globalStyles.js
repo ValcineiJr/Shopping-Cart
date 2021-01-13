@@ -2,6 +2,7 @@ import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
     *{
+        font-family: 'Roboto', sans-serif;
         margin:0;
         padding:0;
         box-sizing:border-box;
@@ -26,8 +27,8 @@ export default createGlobalStyle`
     --secondary: #15181C;
     --menu: #FFF159;
     --white: #ffff;
-    --gray: #7A7A7A;
-    --outline: #2F3336;
+    --gray: #333;
+    --light-gray: #888;
     --retweet: #00C06B;
     --like: #E8265E;
     --like-hover: #c21448;

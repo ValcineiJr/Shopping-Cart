@@ -8,11 +8,7 @@ const Home = () => {
 
   const ListItems = () => items.map((item) => <Card data={item} />);
 
-  return (
-    <Container>
-      <ListItems />
-    </Container>
-  );
+  return <Container>{/* <ListItems /> */}</Container>;
 };
 
 export default Home;
