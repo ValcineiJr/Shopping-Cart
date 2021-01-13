@@ -18,7 +18,6 @@ import {
 } from "./styles";
 import logo from "../../assets/images/logo.png";
 import MenuItem from "../../components/MenuItem";
-import StickyBox from "react-sticky-box";
 
 const Header = () => {
   return (
