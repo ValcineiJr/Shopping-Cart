@@ -11,7 +11,6 @@ const SellBanner = ({ title, data }) => {
   let pos = { top: 0, left: 0, x: 0, y: 0 };
 
   useEffect(() => {
-    itensRef.current.style.cursor = "grab";
     // Attach the handler
     itensRef.current.addEventListener("mousedown", mouseDownHandler);
   }, []);
@@ -43,7 +42,7 @@ const SellBanner = ({ title, data }) => {
   };
 
   const mouseUpHandler = function () {
-    itensRef.current.style.cursor = "grab";
+    itensRef.current.style.cursor = "pointer";
     itensRef.current.style.removeProperty("user-select");
 
     document.removeEventListener("mousemove", mouseMoveHandler);

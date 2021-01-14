@@ -25,7 +25,6 @@ export const Image = styled.img`
   width: 100%;
   height: 280px;
   object-fit: cover;
-  pointer-events: none;
 `;
 export const Price = styled.span`
   font-size: 18px;
@@ -44,10 +43,11 @@ export const AddButton = styled.div`
 
   margin: 5px 0;
 `;
-export const TextLink = styled(Link)`
-  color: var(--white);
+export const Button = styled(Link)`
   text-decoration: none;
-  border-radius: 4px;
-  padding: 10px;
-  background: var(--button);
+  &:active {
+    cursor: grabbing;
+  }
+  cursor: pointer !important;
+  pointer-events: none;
 `;

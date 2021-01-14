@@ -1,5 +1,6 @@
 import React from "react";
 import { useCart } from "../../contexts/cart";
+
 import {
   Container,
   Title,
@@ -8,20 +9,22 @@ import {
   Desc,
   Buy,
   AddButton,
-  TextLink,
+  Button,
 } from "./styles";
 const Card = ({ data }) => {
   const { ADD_TO_CART, FormattedTotal } = useCart();
 
   return (
-    <Container onClick={() => {}}>
-      <Image src={data.img} />
+    <Button>
+      <Container onClick={() => {}}>
+        <Image src={data.img} />
 
-      <Buy>
-        <Title>{data.title}</Title>
-        <Price>R$: {FormattedTotal(data.price)}</Price>
-      </Buy>
-    </Container>
+        <Buy>
+          <Title>{data.title}</Title>
+          <Price>R$: {FormattedTotal(data.price)}</Price>
+        </Buy>
+      </Container>
+    </Button>
   );
 };
 
