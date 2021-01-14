@@ -13,22 +13,13 @@ import {
 const Card = ({ data }) => {
   const { ADD_TO_CART, FormattedTotal } = useCart();
 
-  const handleAddtoCart = (item) => {
-    return ADD_TO_CART(item);
-  };
-
   return (
-    <Container>
-      <Title>{data.title}</Title>
-
+    <Container onClick={() => {}}>
       <Image src={data.img} />
 
-      <Desc>{data.desc}</Desc>
       <Buy>
+        <Title>{data.title}</Title>
         <Price>R$: {FormattedTotal(data.price)}</Price>
-        <AddButton onClick={() => handleAddtoCart(data)}>
-          <TextLink to="/cart">Adicionar ao carrinho</TextLink>
-        </AddButton>
       </Buy>
     </Container>
   );

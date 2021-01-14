@@ -17,8 +17,6 @@ const iconCSS = css`
   cursor: pointer;
 `;
 
-export const Container = styled.div``;
-
 export const CartButton = styled(ShoppingCart)`
   ${iconCSS};
 `;
@@ -34,6 +32,7 @@ export const Menu = styled.div`
   background: var(--menu);
 `;
 export const MenuItens = styled.div`
+  z-index: 1;
   @media (max-width: 1000px) {
     display: none;
   }

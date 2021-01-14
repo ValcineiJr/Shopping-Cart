@@ -1,14 +1,19 @@
-import React from "react";
-import { useCart } from "../../contexts/cart";
-import { Container } from "./styles";
+import React, { useState, useEffect, useRef } from "react";
+
+import { Container, Selectors, Indicator } from "./styles";
 import Card from "../../components/Card";
+import Carousel from "../../components/Carousel";
+import Banner from "../../components/Banner";
+import SellBanner from "../../components/SellBanner";
 
 const Home = () => {
-  const { items } = useCart();
-
-  const ListItems = () => items.map((item) => <Card data={item} />);
-
-  return <Container>{/* <ListItems /> */}</Container>;
+  return (
+    <Container>
+      <Carousel />
+      <Banner />
+      <SellBanner title="Mais vendidos" />
+    </Container>
+  );
 };
 
 export default Home;
