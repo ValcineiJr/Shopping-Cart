@@ -7,6 +7,7 @@ import HeaderMobile from "./components/HeaderMobile";
 
 import Home from "./pages/Home";
 import Cart from "./pages/Cart";
+import Item from "./pages/Item";
 
 function Routes() {
   return (
@@ -18,6 +19,7 @@ function Routes() {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/cart" component={Cart} />
+            <Route exact path="/item" component={Item} />
           </Switch>
         </BrowserRouter>
       </CartProvider>

@@ -11,7 +11,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   transition: all 0.3s;
-  /* justify-content: space-around; */
+  pointer-events: none;
 
   &:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -45,9 +45,8 @@ export const AddButton = styled.div`
 `;
 export const Button = styled(Link)`
   text-decoration: none;
+  user-select: none;
   &:active {
     cursor: grabbing;
   }
-  cursor: pointer !important;
-  pointer-events: none;
 `;

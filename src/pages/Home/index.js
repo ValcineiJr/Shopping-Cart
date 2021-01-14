@@ -1,7 +1,6 @@
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
 
-import { Container, Selectors, Indicator } from "./styles";
-import Card from "../../components/Card";
+import { Container } from "./styles";
 import Carousel from "../../components/Carousel";
 import Banner from "../../components/Banner";
 import SellBanner from "../../components/SellBanner";

@@ -32,6 +32,10 @@ const Carousel = () => {
         checkHover.hovered = hovered;
       }
     });
+
+    return () => {
+      document.removeEventListener("mousemove", () => {});
+    };
   }, []);
 
   useEffect(() => {

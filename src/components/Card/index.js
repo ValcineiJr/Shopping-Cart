@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { useCart } from "../../contexts/cart";
 
 import {
@@ -13,10 +13,11 @@ import {
 } from "./styles";
 const Card = ({ data }) => {
   const { ADD_TO_CART, FormattedTotal } = useCart();
+  const cardRef = useRef();
 
   return (
-    <Button>
-      <Container onClick={() => {}}>
+    <Button draggable={false} to="item">
+      <Container>
         <Image src={data.img} />
 
         <Buy>
